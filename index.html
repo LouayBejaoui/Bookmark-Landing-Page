@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/02ea7152de.js" crossorigin="anonymous"></script>
+    <title> Bookmark Landing Page </title>
+</head>
+<body>
+    <!-- Start of Navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg my-3">
+            <a class="navbar-brand" href="#"> <i class="fas fa-bookmark"></i>  BOOKMARK </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link mx-4 featuresBtn" href="#features"> Features </a>
+                    <a class="nav-item nav-link mx-4 pricingBtn" href="#pricing"> Pricing </a>
+                    <a class="nav-item nav-link mx-4 contactBtn" href="#contact"> Contact </a>
+                </div>
+                <button class="btn loginBtn px-5 mx-4" type="button"> LOGIN </button>
+            </div>
+        </nav>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Start of Menu Bar -->
+    <header class="container-fluid animated fadeInRight">
+        <div class="container">
+            <div class="navbar-brand">  
+                <a class="navbar-brand" href="#"> <i class="fas fa-bookmark"></i>  BOOKMARK </a>
+               <div class="mr-0"> <i class="fas fa-times"></i> </div>
+            </div>
+            <ul class=" text-center">
+                <li>
+                    <a href="#features"> Features </a>
+                </li>
+                <li>
+                    <a href="#pricing"> Pricing </a>
+                </li>
+                <li>
+                    <a href="#contact"> Contact </a>
+                </li>
+                <button class="btn loginBtn" type="button"> LOGIN </button>
+            </ul>
+            <div class="socialIcons text-center fixed-bottom">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </header>
+    <!-- End of Menu Bar -->
+
+    <!-- Start of Section One -->
+    <div class="container-fluid">
+        <div class="container section-one">
+            <div class="row my-5 "> 
+                <div class="col-12 col-lg-6 textDiv my-4">
+                    <h1> A Simple Bookmark Manager </h1>
+                    <p> A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free. </p>
+                    <button class="btn chromeBtn" type="button"> Get it on Chrome </button>
+                    <button class="btn firefoxBtn" type="button"> Get it on Firefox </button>
+                </div>
+                <div class="col-12 col-lg-6 imgDiv my-4">
+                    <div class="shape"> </div>
+                    <img src="./assets/illustration-hero.svg" style="width: 100%" alt="Section One Image">
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- End of Section One -->
+
+    <!-- Start of Section Two -->
+    <div class="container-fluid" id="features">
+        <div class="container section-two">
+            <div class="row titleRowDiv">
+                <div class="col-12 text-center">
+                    <h1> Features </h1>
+                    <p> Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go. </p>
+                </div>
+            </div>
+            <div class="tabs text-center">
+                <a class="tab1Btn active" data-class="tab1"> Simple Bookmarking </a>
+                <a class="tab2Btn" data-class="tab2"> Speedy Searching </a>
+                <a class="tab3Btn" data-class="tab3"> Easy Sharing </a>
+            </div>
+            <div class="tabsTopics">
+                <div class="row tab1">
+                    <div class="col-12 col-lg-6 imgDiv my-4">
+                        <div class="shape"> </div>
+                        <img src="./assets/illustration-features-tab-1.svg" alt="Section Two Tab One">
+                    </div>
+                    <div class="col-12 col-lg-6 textDiv my-4">
+                        <h2> Bookmark in one click </h2>
+                        <p> Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites. </p>
+                        <button class="btn moreinfoBtn" type="button"> More info </button>
+                    </div>
+                </div>
+                <div class="row tab2">
+                    <div class="col-12 col-lg-6 imgDiv my-4">
+                        <div class="shape"> </div>
+                        <img src="./assets/illustration-features-tab-2.svg" alt="Section Two Tab Two">
+                    </div>
+                    <div class="col-12 col-lg-6 textDiv my-4">
+                        <h2> Intelligent search </h2>
+                        <p> Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks. </p>
+                        <button class="btn moreinfoBtn" type="button"> More info </button>
+                    </div>
+                </div>
+                <div class="row tab3">
+                    <div class="col-12 col-lg-6 imgDiv my-4">
+                        <div class="shape"> </div>
+                        <img src="./assets/illustration-features-tab-3.svg" alt="Section Two Tab Three">
+                    </div>
+                    <div class="col-12 col-lg-6 textDiv my-4">
+                        <h2> Share your bookmarks </h2>
+                        <p> Easily share your bookmarks and collections with others. Create a shareable link that you can spend at the click of a button. </p>
+                        <button class="btn moreinfoBtn" type="button"> More info </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Section Two -->
+
+    <!-- Start of Section Three -->
+    <div class="container section-three text-center">
+        <div class="row titleRowDiv">
+            <div class="col-12 text-center">
+                <h1> Download the extension </h1>
+                <p> We have got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize. </p>
+            </div>
+        </div>
+        <div class="row browsersRowDiv">
+            <div class="col-12 col-lg-3">
+                <img src="./assets/logo-chrome.svg" class="browsersLogo" alt="Google Chrome">
+                <h3> Add to Chrome </h3>
+                <p> Minimum version 62 </p>
+                <img src="./assets/bg-dots.svg" class="dots" alt="Google Chrome">
+                <button class="extensionBtn" type="button"> Add & Install Extension </button>
+            </div>
+            <div class="col-12 col-lg-3">
+                <img src="./assets/logo-firefox.svg" class="browsersLogo" alt="Google Chrome">
+                <h3> Add to Firefox </h3>
+                <p> Minimum version 55 </p>
+                <img src="./assets/bg-dots.svg" class="dots" alt="Google Chrome">
+                <button class="extensionBtn" type="button"> Add & Install Extension </button>
+            </div>
+            <div class="col-12 col-lg-3">
+                <img src="./assets/logo-opera.svg" class="browsersLogo" alt="Google Chrome">
+                <h3> Add to Opera </h3>
+                <p> Minimum version 46 </p>
+                <img src="./assets/bg-dots.svg" class="dots" alt="Google Chrome">
+                <button class="extensionBtn" type="button"> Add & Install Extension </button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Section Three -->
+
+    <!-- Start of Section Four -->
+    <div class="container section-four text-center" id="pricing">
+        <div class="row titleRowDiv">
+            <div class="col-12">
+                <h1> Frequently Asked Questions </h1>
+                <p> Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us. </p>
+            </div>
+        </div>
+        <div class="container questions text-left">
+            <div class="question">
+                <p class="question1"> What is Bookmark? <i class="fas fa-chevron-down"></i> </p>
+                <p class="answer1" data-class="question1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias sapiente explicabo fugiat commodi voluptate esse dicta id eveniet, deserunt cum dolorem aliquid accusamus perspiciatis, iusto enim accusantium. Dignissimos, ipsa. </p>
+            </div>
+            <div class="question">
+                <p class="question2"> How can I request a new browser? <i class="fas fa-chevron-down"></i> </p>
+                <p class="answer2" data-class="question2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias sapiente explicabo fugiat commodi voluptate esse dicta id eveniet, deserunt cum dolorem aliquid accusamus perspiciatis, iusto enim accusantium. Dignissimos, ipsa. </p>
+            </div>
+            <div class="question">
+                <p class="question3"> Is there a mobile app? <i class="fas fa-chevron-down"></i> </p>
+                <p class="answer3" data-class="question3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias sapiente explicabo fugiat commodi voluptate esse dicta id eveniet, deserunt cum dolorem aliquid accusamus perspiciatis, iusto enim accusantium. Dignissimos, ipsa. </p>
+            </div>
+            <div class="question">
+                <p class="question4"> What about other Chromium browsers? <i class="fas fa-chevron-down"></i> </p>
+                <p class="answer4" data-class="question4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias sapiente explicabo fugiat commodi voluptate esse dicta id eveniet, deserunt cum dolorem aliquid accusamus perspiciatis, iusto enim accusantium. Dignissimos, ipsa. </p>
+            </div>
+        </div>
+        <button class="btn moreinfoBtn" type="button"> More info </button>
+    </div>
+    <!-- End of Section Four -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4" id="contact">
+        <div class="text-center firstFooter">
+            <p> 35,000+ ALREADY JOINED </p>
+            <h2 class="mb-1"> Stay up-to-date with what we're doing </h2>
+            <div class="formDiv">
+                <input type="text" placeholder="Enter your email address">
+                <button class="conatctBtn btn" type="button"> Contact Us </button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="listItems">
+                    <a class="navbar-brand" href="#"> <i class="fas fa-bookmark"></i>  BOOKMARK </a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="socialIcons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

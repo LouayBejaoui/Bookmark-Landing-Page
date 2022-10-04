@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden; }
+
+ul {
+  list-style-type: none; }
+
+h1 {
+  padding-bottom: 15px; }
+
+button {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 500; }
+
+button.moreinfoBtn {
+  color: white;
+  background-color: #7D8DE3;
+  border: 2px solid #7D8DE3;
+  padding: 10px 25px;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+  button.moreinfoBtn:hover {
+    border: 2px solid #7D8DE3;
+    color: #7D8DE3;
+    background-color: white; }
+
+.shape {
+  height: 20rem;
+  width: 80rem;
+  background-color: #5368DF;
+  border-radius: 300px;
+  position: absolute;
+  top: 100px;
+  z-index: -5; }
+  @media (max-width: 768px) {
+    .shape {
+      height: 15rem;
+      top: 70px; } }
+
+nav {
+  text-transform: uppercase; }
+  nav a {
+    color: #252B46;
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease; }
+  nav a.navbar-brand {
+    font-weight: 500; }
+    nav a.navbar-brand:hover {
+      color: #252B46; }
+    nav a.navbar-brand i {
+      padding: 10px 12px;
+      font-size: 14px;
+      color: white;
+      background-color: #7D8DE3;
+      border-radius: 50%; }
+  nav button.navbar-toggler {
+    outline: none; }
+    nav button.navbar-toggler i {
+      color: #252B46; }
+  nav .navbar-nav a {
+    letter-spacing: 2px;
+    font-weight: 400; }
+    nav .navbar-nav a:hover {
+      color: #FA5757; }
+  nav .loginBtn {
+    letter-spacing: 2px;
+    background-color: #FA5757;
+    color: white;
+    border: 2px solid #FA5757;
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease; }
+    nav .loginBtn:hover {
+      color: #FA5757;
+      background-color: white; }
+
+header {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(37, 43, 70, 0.8); }
+  header .container {
+    color: white;
+    font-size: 18px; }
+    header .container div.navbar-brand {
+      width: 100%; }
+      header .container div.navbar-brand a.navbar-brand {
+        margin-top: 30px;
+        margin-bottom: 15px; }
+        header .container div.navbar-brand a.navbar-brand i.fa-bookmark {
+          padding: 8px;
+          font-size: 12px;
+          color: #252B46;
+          background-color: white;
+          border-radius: 50%; }
+      header .container div.navbar-brand div {
+        cursor: pointer;
+        float: right;
+        margin-top: 33px;
+        margin-right: 15px; }
+    header .container a {
+      color: white;
+      font-size: 18px; }
+    header .container ul {
+      padding-left: 0; }
+      header .container ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(155, 155, 155, 0.8); }
+        header .container ul li a {
+          font-weight: 400; }
+          header .container ul li a:hover {
+            text-decoration: none; }
+      header .container ul li:nth-child(1) {
+        border-top: 1px solid rgba(155, 155, 155, 0.8); }
+    header .container button {
+      margin-top: 30px;
+      color: white;
+      font-size: 18px;
+      width: 100%;
+      border: 2px solid white;
+      padding: 15px; }
+      header .container button:hover {
+        color: white; }
+    header .container div.socialIcons {
+      margin-bottom: 30px; }
+      header .container div.socialIcons i {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 15px;
+        cursor: pointer; }
+
+div[class^="container section"] {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+div.section-one div.row div.imgDiv .shape {
+  margin-left: 120px; }
+  @media (max-width: 768px) {
+    div.section-one div.row div.imgDiv .shape {
+      margin-left: 80px; } }
+
+div.section-one div.row div.textDiv {
+  padding-top: 50px; }
+  @media (max-width: 990px) {
+    div.section-one div.row div.textDiv {
+      text-align: center; } }
+  div.section-one div.row div.textDiv h1 {
+    color: #252B46; }
+  div.section-one div.row div.textDiv p {
+    color: #9194A1;
+    padding-right: 80px;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px 0; }
+    @media (max-width: 990px) {
+      div.section-one div.row div.textDiv p {
+        padding: 0 40px; } }
+  div.section-one div.row div.textDiv button {
+    padding: 15px 25px;
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease; }
+  div.section-one div.row div.textDiv button.chromeBtn {
+    margin-right: 5px;
+    color: white;
+    background-color: #7D8DE3;
+    border: 2px solid #7D8DE3; }
+    div.section-one div.row div.textDiv button.chromeBtn:hover {
+      border: 2px solid #7D8DE3;
+      color: #7D8DE3;
+      background-color: white; }
+  div.section-one div.row div.textDiv button.firefoxBtn {
+    margin-left: 5px;
+    background-color: #fafafa;
+    color: #9194A1;
+    border: 2px solid #fafafa; }
+    div.section-one div.row div.textDiv button.firefoxBtn:hover {
+      border: 2px solid #9194A1;
+      color: #9194A1;
+      background-color: white; }
+
+div.section-two .titleRowDiv {
+  margin-bottom: 50px; }
+  div.section-two .titleRowDiv h1 {
+    color: #252B46; }
+  div.section-two .titleRowDiv p {
+    color: #9194A1;
+    padding: 0 290px;
+    font-weight: 400;
+    font-size: 18px; }
+    @media (max-width: 990px) {
+      div.section-two .titleRowDiv p {
+        padding: 0 30px; } }
+
+div.section-two div.tabs {
+  margin-bottom: 80px; }
+  div.section-two div.tabs a {
+    padding: 35px;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    color: #252B46; }
+    div.section-two div.tabs a:hover {
+      color: #FA5757; }
+    @media (max-width: 990px) {
+      div.section-two div.tabs a {
+        display: block; } }
+  @media (max-width: 990px) {
+    div.section-two div.tabs a:first-child {
+      border-top: 2px solid rgba(0, 0, 0, 0.1); } }
+  div.section-two div.tabs a.active {
+    border-bottom: 3px solid #FA5757;
+    font-weight: 500; }
+
+div.section-two div.tabsTopics div.row:not(:first-child) {
+  display: none; }
+
+div.section-two div.tabsTopics div {
+  float: left; }
+
+div.section-two div.tabsTopics div.row.tab1 {
+  margin-bottom: 100px; }
+  div.section-two div.tabsTopics div.row.tab1 img {
+    width: 100%; }
+
+div.section-two div.tabsTopics div.row.tab2, div.section-two div.tabsTopics div.row.tab3 {
+  margin-bottom: 100px; }
+  div.section-two div.tabsTopics div.row.tab2 img, div.section-two div.tabsTopics div.row.tab3 img {
+    width: 80%;
+    margin-left: 20%; }
+
+div.section-two div.tabsTopics div.imgDiv .shape {
+  margin-right: 100px;
+  right: 0; }
+  @media (max-width: 768px) {
+    div.section-two div.tabsTopics div.imgDiv .shape {
+      margin-right: 80px; } }
+
+div.section-two div.textDiv {
+  padding: 0 65px; }
+  @media (max-width: 990px) {
+    div.section-two div.textDiv {
+      text-align: center;
+      padding: 40px 10px; } }
+  div.section-two div.textDiv h2 {
+    color: #252B46; }
+  div.section-two div.textDiv p {
+    color: #9194A1;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px 0; }
+    @media (max-width: 990px) {
+      div.section-two div.textDiv p {
+        padding: 0 30px; } }
+  div.section-two div.textDiv button.moreinfoBtn {
+    margin-right: 5px; }
+
+div.section-three .titleRowDiv {
+  margin-bottom: 50px; }
+  div.section-three .titleRowDiv h1 {
+    color: #252B46; }
+  div.section-three .titleRowDiv p {
+    color: #9194A1;
+    padding: 0 250px;
+    font-weight: 400;
+    font-size: 18px; }
+    @media (max-width: 990px) {
+      div.section-three .titleRowDiv p {
+        padding: 0 70px; } }
+
+@media (max-width: 990px) {
+  div.section-three .browsersRowDiv {
+    margin-left: 60px;
+    margin-right: 60px; } }
+
+div.section-three .browsersRowDiv .col-12 {
+  padding: 30px 0;
+  margin: 0 47px 80px 47px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 990px) {
+    div.section-three .browsersRowDiv .col-12 {
+      margin: 0 0 80px 0; } }
+
+div.section-three .browsersRowDiv div.col-12:nth-child(2) {
+  top: 40px; }
+  @media (max-width: 990px) {
+    div.section-three .browsersRowDiv div.col-12:nth-child(2) {
+      top: 0px; } }
+
+div.section-three .browsersRowDiv div.col-12:nth-child(3) {
+  top: 70px; }
+  @media (max-width: 990px) {
+    div.section-three .browsersRowDiv div.col-12:nth-child(3) {
+      top: 0px; } }
+
+div.section-three .browsersRowDiv img.browsersLogo {
+  width: 35%;
+  padding: 40px 0; }
+
+div.section-three .browsersRowDiv img.dots {
+  width: 100%;
+  padding: 25px 0; }
+
+div.section-three .browsersRowDiv h3 {
+  color: #252B46; }
+
+div.section-three .browsersRowDiv p {
+  color: #9194A1;
+  font-weight: 400;
+  font-size: 18px; }
+
+div.section-three .browsersRowDiv button {
+  padding: 15px 20px;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  color: white;
+  background-color: #7D8DE3;
+  border: 2px solid #7D8DE3; }
+  div.section-three .browsersRowDiv button:hover {
+    border: 2px solid #7D8DE3;
+    color: #7D8DE3;
+    background-color: white; }
+  @media (max-width: 990px) {
+    div.section-three .browsersRowDiv button {
+      padding: 15px 45px; } }
+
+div.section-four button.moreinfoBtn {
+  margin: 60px 0; }
+
+div.section-four .titleRowDiv {
+  margin-bottom: 50px; }
+  div.section-four .titleRowDiv h1 {
+    color: #252B46; }
+  div.section-four .titleRowDiv p {
+    color: #9194A1;
+    padding: 0 300px;
+    font-weight: 400;
+    font-size: 18px; }
+    @media (max-width: 990px) {
+      div.section-four .titleRowDiv p {
+        padding: 0 60px; } }
+
+div.section-four .questions {
+  padding: 0 250px; }
+  @media (max-width: 990px) {
+    div.section-four .questions {
+      padding: 0 35px; } }
+  div.section-four .questions div {
+    cursor: pointer;
+    padding: 15px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+    div.section-four .questions div p:nth-child(1) {
+      color: #252B46;
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      -webkit-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+      div.section-four .questions div p:nth-child(1):hover {
+        color: #FA5757; }
+      div.section-four .questions div p:nth-child(1) i {
+        float: right; }
+      div.section-four .questions div p:nth-child(1) i.fa-chevron-down {
+        color: #7D8DE3; }
+      div.section-four .questions div p:nth-child(1) i.fa-chevron-up {
+        color: #FA5757; }
+    div.section-four .questions div p[class^="answer"] {
+      color: #9194A1;
+      font-weight: 400;
+      display: none; }
+  div.section-four .questions div:first-child {
+    border-top: 2px solid rgba(0, 0, 0, 0.1); }
+
+footer div.firstFooter {
+  background-color: #7D8DE3;
+  padding: 80px 460px;
+  font-size: 18px;
+  color: white; }
+  @media (max-width: 990px) {
+    footer div.firstFooter {
+      padding: 80px 50px; } }
+  footer div.firstFooter p {
+    color: white;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+    font-size: 14px; }
+  footer div.firstFooter h2 {
+    font-weight: 500; }
+  footer div.firstFooter div.formDiv {
+    padding-top: 30px; }
+    footer div.firstFooter div.formDiv input {
+      width: 62%;
+      border-radius: 8px;
+      padding: 10px 15px;
+      border: none;
+      color: #252B46; }
+      footer div.firstFooter div.formDiv input::-webkit-input-placeholder {
+        color: #9194A1; }
+      footer div.firstFooter div.formDiv input:-ms-input-placeholder {
+        color: #9194A1; }
+      footer div.firstFooter div.formDiv input::-ms-input-placeholder {
+        color: #9194A1; }
+      footer div.firstFooter div.formDiv input::placeholder {
+        color: #9194A1; }
+      @media (max-width: 990px) {
+        footer div.firstFooter div.formDiv input {
+          width: 100%; } }
+    footer div.firstFooter div.formDiv button {
+      letter-spacing: 2px;
+      background-color: #FA5757;
+      color: white;
+      border: 2px solid #FA5757;
+      padding: 10px 15px;
+      -webkit-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      margin: 0 8px; }
+      footer div.firstFooter div.formDiv button:hover {
+        color: #FA5757;
+        background-color: white; }
+      @media (max-width: 990px) {
+        footer div.firstFooter div.formDiv button {
+          width: 100%;
+          margin: 10px 0; } }
+
+footer div.container-fluid {
+  background-color: #252B46;
+  color: white;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500; }
+  footer div.container-fluid div.listItems {
+    display: inline-block; }
+    @media (max-width: 990px) {
+      footer div.container-fluid div.listItems {
+        text-align: center;
+        display: block !important; } }
+    footer div.container-fluid div.listItems a.navbar-brand {
+      color: white;
+      font-weight: 500; }
+      footer div.container-fluid div.listItems a.navbar-brand i {
+        padding: 10px 12px;
+        font-size: 14px;
+        color: white;
+        background-color: #7D8DE3;
+        border-radius: 50%; }
+    footer div.container-fluid div.listItems a:not(:first-child) {
+      color: white;
+      margin-top: 0px;
+      padding-left: 40px; }
+      @media (max-width: 990px) {
+        footer div.container-fluid div.listItems a:not(:first-child) {
+          margin-top: 20px;
+          padding-left: 0px; } }
+      footer div.container-fluid div.listItems a:not(:first-child):hover {
+        text-decoration: none;
+        color: #FA5757; }
+    footer div.container-fluid div.listItems a {
+      -webkit-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+      @media (max-width: 990px) {
+        footer div.container-fluid div.listItems a {
+          display: block; } }
+  footer div.container-fluid div.socialIcons {
+    float: right;
+    margin-top: 0px; }
+    @media (max-width: 990px) {
+      footer div.container-fluid div.socialIcons {
+        text-align: center;
+        display: block !important;
+        float: none !important;
+        margin-top: 20px; } }
+    footer div.container-fluid div.socialIcons i {
+      cursor: pointer;
+      font-size: 18px;
+      margin: 0 10px; }
